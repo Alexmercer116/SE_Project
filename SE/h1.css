@@ -1,19 +1,31 @@
 body{
-   background-image: url(img4.jpg);
+   background-image: url(job.jpeg);
    background-size: cover;
+   /*background-position: right top;*/ 
    margin: 0px;
 }
 ul{
-   background-image: url(b1.jpg);
+   height: 50px;
+   list-style-type: none;
+   background-color: salmon;
 }
 
+.flex-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+} 
+
 .menubar{
-   font-size: 14px;
-   font-family: sans-serif;
-   display: inline;
-   text-decoration : underline;
-   margin: 2px 4px 10px 3px;
-   padding: 20px 14px 24px;
+   font-size: 21px;
+   font-family: 'Baskerville Old Face';
+   font-weight: bold;
+   font-variant: small-caps;
+   display: inline-block;
+   text-align: center;
+   transition: all 0.3s ease;
+   margin-top: 17.25px;
+   width: 14%;
 }
 /*#logo{
 float : left;
@@ -33,28 +45,71 @@ margin-bottom : 4px;
 
 a:link,a:visited{
    text-decoration: none;
-   color: white;
+   color: #ACCDF5;
    text-align: center;
 }
 a:hover,a:active{
    text-decoration: underline;
-   color: orangered;
+   color: #ACCDF5;
 }
 
 .log{
    float: right;
    height: 36px;
    width: 130px;
-   display: inline;
+   display: inline-block;
    font-size: 14px;
    font-family: serif;
+   color: #04AA6D;
    border-style: solid;
    border-width:medium;
    border-color: peachpuff;
    border-radius: 0px;
+   opacity: 0.8;
    margin: 8px;
    padding: 12px 8px 16px;
 }
 .log:hover{
 color: plum;
 }
+
+.popup{
+   display: none;
+   position: fixed;
+   border: groove #91cbfb;
+   z-index: 9;
+}
+
+.form-container {
+   max-width: 300px;
+   padding: 10px;
+   background-color: #91cbfb;
+   opacity: 1;
+ }
+
+ .form-container input[type=text], .form-container input[type=password] {
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   border: none;
+   background: #f1f1f1;
+ }
+ .form-container .btn {
+   background-color: #04AA6D;
+   color: white;
+   padding: 16px 18px;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   margin-bottom:10px;
+   opacity: 0.8;
+ }
+
+ .form-container input[type=text]:focus,
+ .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+ }
+ .form-container .log:hover,.log{
+    opacity: 1;
+ }
